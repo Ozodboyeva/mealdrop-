@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  border-radius: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#header {
+  padding: 25px 0px;
+  border: 1px solid var(--grey-grey-light-4, #e9e9e9);
+  background: #fff;
+}
+#header .header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#header .header__items {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+#header .header__items .header__item {
+  color: var(--black, #202020);
+  font-feature-settings: "liga" off;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media screen and (max-width: 800px) {
+  #header .header__items .header__item {
+    display: none;
+  }
+}
+#header .header-btn {
+  border: none;
+  background-color: transparent;
+}
+#header .header-btn i {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+#hero {
+  width: 100%;
+  background-image: url(../asssets/images/Image.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#hero .hero__header {
+  padding: 89px 0px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 43.95px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 64px; /* 145.62% */
+  letter-spacing: -2.198px;
+}
+
+#about {
+  padding: 32px 0px 100px;
+}
+#about .about__category,
+#about span {
+  color: var(--grey-grey-dark-1, #797979);
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+#about .part {
+  text-decoration-line: none;
+  cursor: pointer;
+}
+#about .about__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+  row-gap: 40px;
+}
+@media screen and (max-width: 800px) {
+  #about .about__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 700px) {
+  #about .about__cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+#about .about__cards .about__card {
+  padding-top: 32px;
+}
+#about .about__cards .about__card-img img {
+  width: 100%;
+  border-radius: 8px 8px 0px 0px;
+}
+#about .about__cards .about__card .about__card-text {
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--grey-grey-light-6, #f9f9f9);
+}
+#about .about__cards .about__card .about__card-subtitle {
+  color: var(--black, #202020);
+  font-family: Montserrat;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+}
+#about .about__cards .about__card i {
+  color: var(--blue-blue-dark-5, #596f72);
+  font-feature-settings: "liga" off;
+  font-family: Hind;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#about .about__cards .about__card .about-card-title {
+  margin: 9px 0px 24px;
+  color: var(--grey-grey-dark-3, #4d4d4d);
+  font-feature-settings: "liga" off;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#about .about__cards .about__card .about__btn {
+  padding: 7px;
+  border: none;
+  color: var(--grey-grey-dark-2, #636363);
+  font-feature-settings: "liga" off;
+  font-family: Hind;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 4px;
+  background: var(--grey-grey-light-4, #e9e9e9);
+}
+
+#footer {
+  padding: 48px 0px 100px;
+  background: var(--grey-grey-dark-5, #2c2c2c);
+}
+#footer .footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (max-width: 800px) {
+  #footer .footer__container {
+    flex-wrap: wrap;
+  }
+}
+#footer .footer__container .footer__head {
+  margin-bottom: 16px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 22.5px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+#footer .footer__container .footer__item a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #fff;
+  font-family: Hind;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
